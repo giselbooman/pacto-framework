@@ -1,0 +1,180 @@
+# PACTO ↔ UN Sustainable Development Goals Alignment
+# Maps PACTO biocultural domains and mechanisms to SDG targets
+#
+# Source: regen-data-standards/schema/src/SDG.yaml, Regen Registry Handbook
+# Cross-references:
+#   - pacto-to-regen.yaml (credit type SDG mappings)
+#   - opl-to-pacto.yaml (OPL civic sector mappings)
+#   - USS01 SDG alignment: SDG 4, 8, 13, 15, 17
+
+name: PACTO SDG Alignment
+version: 0.1.0
+
+# ─────────────────────────────────────────────────────────────
+# Primary SDG Alignments — Directly supported by PACTO
+# ─────────────────────────────────────────────────────────────
+primary_sdgs:
+
+  - sdg: 15
+    name: Life on Land
+    relevance: high
+    pacto_alignment:
+      domains: [ecological, territorial]
+      mechanisms: [m020, m022]
+      description: >
+        PACTO's core application is community-led ecological agreements
+        for biodiversity conservation and land stewardship. Biocultural
+        indicators directly measure ecosystem health as defined by
+        communities who live in those ecosystems.
+      credit_classes: [USS01, BT01]
+      indicators:
+        - Jaguar population density (Siekopai)
+        - Forest canopy cover
+        - Habitat connectivity
+        - Species diversity indices
+
+  - sdg: 13
+    name: Climate Action
+    relevance: high
+    pacto_alignment:
+      domains: [ecological]
+      mechanisms: [m020, m022]
+      description: >
+        PACTO-generated agreements can include carbon sequestration
+        commitments verified through community-defined indicators
+        complemented by scientific baselines (soil carbon, NDVI).
+      credit_classes: [C01, C02, C03, C04]
+      indicators:
+        - Soil organic carbon
+        - Forest cover maintenance
+        - Fire management practices
+
+  - sdg: 16
+    name: Peace, Justice, and Strong Institutions
+    relevance: high
+    pacto_alignment:
+      domains: [governance]
+      mechanisms: [m021, m023]
+      description: >
+        PACTO strengthens indigenous governance institutions by making
+        assembly processes more legible and contractually binding.
+        The Evidence Trail provides transparent, accountable
+        decision-making records. Community endorsement (m023) is
+        participatory democracy in practice.
+      indicators:
+        - Assembly participation rates
+        - Community endorsement coverage
+        - Evidence trail completeness
+
+# ─────────────────────────────────────────────────────────────
+# Secondary SDG Alignments — Supported through co-benefits
+# ─────────────────────────────────────────────────────────────
+secondary_sdgs:
+
+  - sdg: 4
+    name: Quality Education
+    relevance: medium
+    pacto_alignment:
+      domains: [cultural]
+      mechanisms: [m020]
+      description: >
+        PACTO's biocultural indicator process includes intergenerational
+        knowledge transfer — elders defining indicators based on
+        traditional ecological knowledge, youth participating in
+        assemblies. The process itself is educational.
+      indicators:
+        - Intergenerational knowledge transfer events
+        - Youth participation in indicator definition
+        - Traditional ecological knowledge documentation
+
+  - sdg: 8
+    name: Decent Work and Economic Growth
+    relevance: medium
+    pacto_alignment:
+      domains: [economic]
+      mechanisms: [m022]
+      description: >
+        PACTO agreements include payment terms (PES, credit revenue
+        sharing) that create sustainable economic opportunities
+        for indigenous communities. Agreements specify equitable
+        benefit distribution.
+      indicators:
+        - Household income from ecosystem service payments
+        - Employment in conservation activities
+        - Equitable benefit distribution ratios
+
+  - sdg: 17
+    name: Partnerships for the Goals
+    relevance: medium
+    pacto_alignment:
+      domains: [governance]
+      mechanisms: [m022, m023]
+      description: >
+        PACTO formalizes partnerships between indigenous communities,
+        conservation organizations, and market actors. Living contracts
+        (m022) define multi-stakeholder governance with clear roles
+        and community authority.
+      indicators:
+        - Active multi-stakeholder agreements
+        - Partner compliance with agreement terms
+        - Community satisfaction with partnerships
+
+  - sdg: 6
+    name: Clean Water and Sanitation
+    relevance: low
+    pacto_alignment:
+      domains: [ecological, territorial]
+      mechanisms: [m020]
+      description: >
+        Water quality is a common biocultural indicator in Amazonian
+        contexts. Community-defined water health indicators may be
+        included in PACTO agreements.
+      indicators:
+        - River water quality indices
+        - Watershed protection coverage
+        - Community water access
+
+# ─────────────────────────────────────────────────────────────
+# SDG ↔ Credit Class Cross-Reference
+# How SDG alignment flows through to Regen credit types
+# ─────────────────────────────────────────────────────────────
+credit_class_sdg_matrix:
+
+  USS01:
+    name: Umbrella Species Stewardship
+    primary_sdgs: [15]
+    secondary_sdgs: [4, 8, 13, 17]
+    pacto_relevance: >
+      Siekopai pilot directly produces USS01-compatible credits.
+      PACTO provides the biocultural indicator co-definition process
+      that maps community knowledge to the USS01 composite index.
+
+  BT01:
+    name: BioTerra Biodiversity
+    primary_sdgs: [15]
+    secondary_sdgs: [13]
+    pacto_relevance: >
+      Terrasos restoration scoring could integrate PACTO-defined
+      community indicators as co-benefits or verification inputs.
+
+  C04:
+    name: Ruuts Soil Carbon
+    primary_sdgs: [13]
+    secondary_sdgs: [15]
+    pacto_relevance: >
+      Soil carbon credits could include PACTO biocultural co-benefits
+      for projects in indigenous territories where community-defined
+      indicators complement scientific soil measurements.
+
+# ─────────────────────────────────────────────────────────────
+# Mapping to regen-data-standards SDG.yaml
+# Ensures consistency with existing Regen SDG definitions
+# ─────────────────────────────────────────────────────────────
+regen_data_standards_reference:
+  schema_location: github.com/regen-network/regen-data-standards/schema/src/SDG.yaml
+  impact_location: github.com/regen-network/regen-data-standards/schema/src/Impact.yaml
+  notes: >
+    PACTO SDG alignments should be consistent with SDG codes defined in
+    regen-data-standards. When creating BioculturalIndicator objects,
+    the sdg_alignment field should reference standard SDG codes (e.g., "SDG:15")
+    as defined in the regen-data-standards SDG.yaml.
