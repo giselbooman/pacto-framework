@@ -77,7 +77,7 @@
 | **Yakum** | Siekopai | Local implementation partner for the Siekopai pilot. |
 | **Fundación Pachamama** | Ecuador | Conservation organization partnering on Siekopai and Sharamentsa pilots. |
 | **ASHA** | Amazon Basin | Amazon Sacred Headwaters Alliance — multilateral bioregional fund where PACTO serves as MEL framework. |
-| **Natura Tech** | Funding | Grant supporting Siekopai retrospective and Biocultural Crediting Guidelines. |
+
 
 ## Indigenous Language Notes
 
