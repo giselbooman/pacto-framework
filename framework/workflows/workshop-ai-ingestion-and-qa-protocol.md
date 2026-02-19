@@ -167,3 +167,45 @@ Role within this protocol:
 This GPT functions as an operational tool under this documented workflow.
 
 Use of alternative models or agents is permitted provided they comply with the ingestion and QA requirements defined above.
+
+---
+
+## 9. Community Validation and Consent Loop
+
+Following indicator distillation and technical QA, a structured community validation step is required.
+
+This step ensures that:
+
+- Final indicator selection accurately reflects community intent  
+- Filtering criteria are transparent  
+- No material meaning was altered during synthesis  
+- Community representatives acknowledge and validate the resulting framework  
+
+### 9.1 Circulation Requirements
+
+Final workshop reports and the proposed indicator set should be circulated to community representatives who participated in the workshops.
+
+Where applicable:
+
+- Circulation should include leadership representatives involved in the process  
+- Gender inclusion should be considered to ensure representative review  
+- Materials should be provided in a language accessible to the community  
+- A reasonable review period should be provided  
+
+### 9.2 Feedback Integration
+
+Substantive feedback should be documented and, where appropriate, integrated into the final indicator set.
+
+Material disagreements or requested modifications should be recorded.
+
+### 9.3 Validation Record
+
+A record should be maintained documenting:
+
+- Who reviewed the materials  
+- Date of circulation  
+- Feedback received  
+- Final confirmation or acknowledgement  
+
+This step strengthens procedural integrity and supports biocultural legitimacy within the crediting framework.
+
