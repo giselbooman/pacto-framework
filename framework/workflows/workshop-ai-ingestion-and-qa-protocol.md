@@ -70,7 +70,7 @@ A bespoke GPT may be used to:
 - Extract biocultural indicators  
 - Structure workshop reports  
 
-**Inputs:**  
+Inputs:
 - Literal transcripts only  
 
 **Outputs:**  
