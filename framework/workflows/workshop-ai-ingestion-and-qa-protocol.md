@@ -109,7 +109,7 @@ Selection criteria include:
 - **Operational Feasibility**  
   Realistic for community-level tracking and reporting.
 
-- **Methodological Proportionality**  
+- **Methodological Proportionality**
 
 The total number of indicators should align with the structural and reporting expectations of the selected protocol, while balancing ecological sensitivity, implementation feasibility, and external review clarity.
 
