@@ -20,12 +20,12 @@ This protocol applies to workshop-based indicator development and report generat
 
 This workflow governs the end-to-end process from:
 
-Audio Recording  
-→ Literal Transcript Generation  
-→ AI-Assisted Workshop Report Drafting  
-→ Indicator Distillation  
-→ QA Review  
-→ External Circulation  
+- Audio Recording
+- Literal Transcript Generation
+- AI-Assisted Workshop Report Drafting
+- Indicator Distillation
+- QA Review
+- External Circulation
 
 This protocol does not implement automation inside the repository. It documents process controls and review gates.
 
