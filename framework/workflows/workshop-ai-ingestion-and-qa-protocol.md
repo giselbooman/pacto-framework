@@ -73,7 +73,7 @@ A bespoke GPT may be used to:
 Inputs:
 - Literal transcripts only  
 
-**Outputs:**  
+Outputs:
 - Structured workshop report  
 - Preliminary indicator extraction  
 
